@@ -1,0 +1,12 @@
+<USER>jalalabad_ipg</USER>
+<PASS>ipg321</PASS>
+<HOST>172.22.8.126</HOST>
+<PORT>1521</PORT>
+<SID>jalalaDB</SID>
+<DBBL>https://ecom.dutchbanglabank.com/ecomm2/ClientHandler?</DBBL>
+<CLOC>/root/000599991160000/</CLOC>
+<BB_SERVER>localhost</BB_SERVER>
+<BB_PORT>54445</BB_PORT>
+<BRAC>http://ipaytest.bracbank.com:8080/ipg/servlet_pay</BRAC>
+<RURL>http://rsm.jalalabadgas.org.bd:8080/IPG/transBracBank</RURL>
+<INVOICE>http://rsm.jalalabadgas.org.bd:8080/JGTDSL_WEB/receiveIpgResponse.action</INVOICE>

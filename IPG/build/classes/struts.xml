@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="IPG" extends="struts-default">
+		<action name="initPayment" class="com.iftiict.ipg.MakePayment"
+			method="process">
+			<result name="redirect_dbbl" type="redirect">${url}</result>
+			<result name="submit_brac_bank">/Payment_BracBank.jsp</result>
+			<result name="success">/Success.jsp</result>
+			<result name="error" type="redirect">/Errors</result>
+		</action>
+		
+		<action name="transSuccess" class="com.iftiict.ipg.PaymentProcess"
+			method="success">
+			<result name="success">/Payment_Process.jsp</result>
+			<result name="error">/Failed.jsp</result>
+		</action>
+		<action name="transFailed" class="com.iftiict.ipg.PaymentProcess"
+			method="failed">
+			<result name="success">/Payment_Process.jsp</result>
+			<result name="error">/Failed.jsp</result>
+		</action>
+		<action name="transBracBank" class="com.iftiict.ipg.PaymentProcess"
+			method="bracbank">
+			<result name="success">/Payment_Process.jsp</result>
+			<result name="error">/Failed.jsp</result>
+		</action>
+		<action name="Errors" class="com.iftiict.ipg.ErrorsMsg"
+			method="process">
+			<result name="success">/Error.jsp</result>
+		</action>
+	</package>
+</struts>

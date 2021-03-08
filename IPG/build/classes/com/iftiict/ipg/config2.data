@@ -1,0 +1,12 @@
+<USER>db_jbd</USER>
+<PASS>y6T45G0vBcJA1l</PASS>
+<HOST>172.22.102.130</HOST>
+<PORT>1522</PORT>
+<SID>jalalabad</SID>
+<DBBL>https://ecomtest.dutchbanglabank.com/ecomm2/ClientHandler?</DBBL>
+<CLOC>/usr/share/ipg/dbbl/</CLOC>
+<BB_SERVER>localhost</BB_SERVER>
+<BB_PORT>54445</BB_PORT>
+<BRAC>http://ipaytest.bracbank.com:8080/ipg/servlet_pay</BRAC>
+<RURL>http://103.48.16.144:8080/IPG/transBracBank</RURL>
+<INVOICE>http://103.48.16.144:8080/JGTDSL_WEB/receiveIpgResponse.action</INVOICE>
